@@ -48,7 +48,6 @@
     "office365",
     "login"
   ],
- 
   "homepage": "https://github.com/muthuks2020/react-office365/blob/master/README.md",
   "babel": {
     "env": {
