@@ -1,17 +1,22 @@
 # react-office365
-A react component to implement Microsoft login (via outlook.com, live.com, office365.com). Microsoft login in a react.js app
+
+Implemention of  Microsoft login (via outlook.com, live.com, office365.com). Microsoft login in a react.js app
 
 
 Follow the steps for imention:
 
 Step 1
+
 Obtain application Id by registering your app in Microsoft App Dev Center, under the platforms section, add web platform and enter the redirect uri, which is the path of an html file residing on your web server. For example http://localhost:9999/authComplete.html. Content of this html file in mentioned in step 4. Select appropriate scopes from the Delegated Permissions Section. Keep a note of these.
 
 Step 2
+
 Install the package via
 
 npm install react-ms-login --save
+
 Step 3
+
 You can use this component anywhere in your app as shown below:
 
 import React from "react";
@@ -39,6 +44,7 @@ ReactDOM.render(<ReactLoginMS
 />, document.getElementById("app"));
 
 Step 4
+
 Based on the redirectUri you have configured in the Step 1, create the corresponding html file. For example in this case since we have configured redirectUri as http://localhost:9999/authComplete.html, that means we need authComplete.html file at the root of the server. You can of course choose any path in your server, just make sure redirectUri reflects that path correctly. Content of authComplete.html is shown below.
 
 <!DOCTYPE html>
@@ -55,3 +61,4 @@ Based on the redirectUri you have configured in the Step 1, create the correspon
 </body>
 </html>
 first script reference points to authComplete.js, make sure you copy this file from the dist directory of react-ms-login package and put it in your server where it's accessible and then change the script src to reflect the path.
+
