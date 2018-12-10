@@ -1,0 +1,84 @@
+{
+  "name": "react-ms-login",
+  "version": "0.1.2",
+  "description": "A react component to implement Microsoft office365",
+  "main": "dist/react-ms-login.js",
+  "scripts": {
+    "start": "export NODE_ENV=development&& webpack --config webpack.config.dev.js",
+    "bundle": "export NODE_ENV=production&& webpack --config webpack.config.dist.js",
+    "clean": "rm -rf node_modules"
+  },
+  "author": "Muthu",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.7.7",
+    "babel": "6.23.0",
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.2",
+    "babel-loader": "6.4.1",
+    "babel-plugin-transform-react-constant-elements": "6.23.0",
+    "babel-plugin-transform-react-inline-elements": "6.22.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.1",
+    "babel-preset-es2015": "6.24.0",
+    "babel-preset-react": "6.23.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.4.2"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muthuks2020/react-office365"
+  },
+  "keywords": [
+    "Microsoft",
+    "login",
+    "office365",
+    "login",
+    "React",
+    "Microsoft",
+    "Login",
+    "React",
+    "office365",
+    "login"
+  ],
+ 
+  "homepage": "https://github.com/muthuks2020/react-office365/blob/master/README.md",
+  "babel": {
+    "env": {
+      "development": {
+        "presets": [
+          [
+            "es2015",
+            {
+              "modules": false
+            }
+          ],
+          "react"
+        ]
+      },
+      "production": {
+        "presets": [
+          [
+            "es2015",
+            {
+              "modules": false
+            }
+          ],
+          "react"
+        ],
+        "plugins": [
+          "transform-react-remove-prop-types",
+          "transform-react-constant-elements",
+          "transform-react-inline-elements"
+        ]
+      }
+    }
+  }
+}
