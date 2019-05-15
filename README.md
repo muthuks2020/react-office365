@@ -9,13 +9,8 @@ Step 1
 
 Obtain application Id by registering your app in Microsoft App Dev Center, under the platforms section, add web platform and enter the redirect uri, which is the path of an html file residing on your web server. For example http://localhost:9999/authComplete.html. Content of this html file in mentioned in step 4. Select appropriate scopes from the Delegated Permissions Section. Keep a note of these.
 
+
 Step 2
-
-Install the package via
-
-npm install react-ms-login --save
-
-Step 3
 
 You can use this component anywhere in your app as shown below:
 
